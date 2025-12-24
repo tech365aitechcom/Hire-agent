@@ -46,8 +46,8 @@ export function HeroSection() {
         <div className="wave-animation absolute bottom-0 left-0 right-0 h-64 opacity-30" />
       </div>
 
-      <div className="container relative mx-auto px-4 py-24 lg:px-8 lg:py-32">
-        <div className="mx-auto max-w-5xl text-center">
+      <div className="container relative mx-auto px-6 py-24 sm:px-8 lg:py-32">
+        <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
