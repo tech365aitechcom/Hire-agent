@@ -36,7 +36,7 @@ const Index = () => {
         <meta name="twitter:description" content="Deploy AI voice agents for calls, bookings, support, and lead qualification." />
       </Helmet>
 
-      <main className="min-h-screen bg-background">
+      <main className="min-h-screen bg-background overflow-x-hidden">
         <Navbar />
         <HeroSection />
         <TrustSection />
