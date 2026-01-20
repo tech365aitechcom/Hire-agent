@@ -1,6 +1,15 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Play, Settings, Stethoscope, Home, ShoppingCart, Phone, Calendar, Headphones } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog';
+import { VoiceRecorder } from '@/components/VoiceRecorder';
 
 const agents = [
   {
@@ -42,6 +51,8 @@ const agents = [
 ];
 
 export function AgentGallery() {
+  const [selectedAgent, setSelectedAgent] = useState<string | null>(null);
+
   return (
     <section id="agents" className="relative py-24 lg:py-32">
       {/* Background */}
@@ -87,18 +98,35 @@ export function AgentGallery() {
               <p className="mb-6 text-sm text-muted-foreground">{agent.description}</p>
 
               <div className="flex gap-3">
-                <Button variant="hero" size="sm" className="flex-1">
+                <Button
+                  variant="hero"
+                  size="sm"
+                  className="flex-1"
+                  onClick={() => setSelectedAgent(agent.name)}
+                >
                   <Play className="h-4 w-4" />
                   Talk to Agent
                 </Button>
-                <Button variant="glass" size="sm">
+                {/* Commented out for launch - will enable when settings is ready */}
+                {/* <Button variant="glass" size="sm">
                   <Settings className="h-4 w-4" />
-                </Button>
+                </Button> */}
               </div>
             </motion.div>
           ))}
         </div>
       </div>
+
+      {/* Voice Recorder Dialog */}
+      <Dialog open={!!selectedAgent} onOpenChange={(open) => !open && setSelectedAgent(null)}>
+        <DialogContent className="max-w-2xl">
+          <DialogHeader className="sr-only">
+            <DialogTitle>Voice Recorder</DialogTitle>
+            <DialogDescription>Record your message to the AI agent</DialogDescription>
+          </DialogHeader>
+          {selectedAgent && <VoiceRecorder agentName={selectedAgent} />}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }

@@ -119,13 +119,14 @@ export function PricingSection() {
                 ))}
               </ul>
 
-              <Button
+              {/* Commented out for launch - will enable when signup/contact is ready */}
+              {/* <Button
                 variant={plan.popular ? 'hero' : 'heroOutline'}
                 className="mt-8 w-full"
                 size="lg"
               >
                 {plan.cta}
-              </Button>
+              </Button> */}
             </motion.div>
           ))}
         </div>

@@ -86,7 +86,8 @@ export function HeroSection() {
           </motion.p>
 
           {/* CTAs */}
-          <motion.div
+          {/* Commented out for launch - will enable when demo/signup is ready */}
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
@@ -100,7 +101,7 @@ export function HeroSection() {
               Build Your Agent
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
-          </motion.div>
+          </motion.div> */}
 
           {/* Stats */}
           <motion.div

@@ -24,11 +24,12 @@ export function CTASection() {
             <span className="gradient-text">Agents Today</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
-            Join thousands of businesses using AI voice agents to automate calls, 
+            Join thousands of businesses using AI voice agents to automate calls,
             qualify leads, and delight customers — all without writing code.
           </p>
 
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          {/* Commented out for launch - will enable when signup/demo is ready */}
+          {/* <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button variant="hero" size="xl" className="group">
               Get Started Free
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -37,7 +38,7 @@ export function CTASection() {
               <Play className="h-5 w-5" />
               Book a Demo
             </Button>
-          </div>
+          </div> */}
 
           <p className="mt-6 text-sm text-muted-foreground">
             No credit card required • Free tier available • Deploy in minutes

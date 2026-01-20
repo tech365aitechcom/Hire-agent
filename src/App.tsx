@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
+import SalesVoicebots from "./pages/SalesVoicebots";
+import CustomerSupport from "./pages/CustomerSupport";
+import AIWorkflows from "./pages/AIWorkflows";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +23,9 @@ const App = () => (
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/sales" element={<SalesVoicebots />} />
+              <Route path="/support" element={<CustomerSupport />} />
+              <Route path="/automation" element={<AIWorkflows />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

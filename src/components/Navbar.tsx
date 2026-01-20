@@ -1,15 +1,13 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Mic2 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Menu, X } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 
 const navLinks = [
-  { name: 'Features', href: '#features' },
-  { name: 'Agents', href: '#agents' },
-  { name: 'Use Cases', href: '#usecases' },
-  { name: 'Integrations', href: '#integrations' },
-  { name: 'Pricing', href: '#pricing' },
+  { name: 'Sales Voicebots', href: '/sales' },
+  { name: 'Customer Support', href: '/support' },
+  { name: 'AI Workflows', href: '/automation' },
+  { name: 'Pricing', href: '/#pricing' },
 ];
 
 export function Navbar() {
@@ -25,11 +23,12 @@ export function Navbar() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
-            <div className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-neon-purple to-neon-blue">
-              <Mic2 className="h-5 w-5 text-foreground" />
-            </div>
-            <span className="font-display text-xl font-bold">VoiceAI</span>
+          <a href="/" className="flex items-center">
+            <img
+              src="/logo.png"
+              alt="HireAgent Logo"
+              className="h-10 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop Nav */}
@@ -48,12 +47,13 @@ export function Navbar() {
           {/* Desktop CTAs */}
           <div className="hidden items-center gap-3 md:flex">
             <ThemeToggle />
-            <Button variant="ghost" size="sm">
+            {/* Commented out for launch - will enable when auth is ready */}
+            {/* <Button variant="ghost" size="sm">
               Sign In
             </Button>
             <Button variant="hero" size="sm">
               Get Started
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -91,12 +91,13 @@ export function Navbar() {
                   <span className="text-sm text-muted-foreground">Theme</span>
                   <ThemeToggle />
                 </div>
-                <Button variant="ghost" className="w-full">
+                {/* Commented out for launch - will enable when auth is ready */}
+                {/* <Button variant="ghost" className="w-full">
                   Sign In
                 </Button>
                 <Button variant="hero" className="w-full">
                   Get Started
-                </Button>
+                </Button> */}
               </div>
             </div>
           </motion.div>
