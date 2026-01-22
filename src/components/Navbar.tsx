@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, LayoutDashboard } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { Button } from '@/components/ui/button';
 
 const navLinks = [
   { name: 'Sales Voicebots', href: '/sales' },
@@ -47,6 +48,21 @@ export function Navbar() {
           {/* Desktop CTAs */}
           <div className="hidden items-center gap-3 md:flex">
             <ThemeToggle />
+            <Button
+              variant="outline"
+              size="sm"
+              asChild
+            >
+              <a
+                href="https://ai-call-analytics.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <LayoutDashboard className="h-4 w-4" />
+                Dashboard
+              </a>
+            </Button>
             {/* Commented out for launch - will enable when auth is ready */}
             {/* <Button variant="ghost" size="sm">
               Sign In
@@ -91,6 +107,22 @@ export function Navbar() {
                   <span className="text-sm text-muted-foreground">Theme</span>
                   <ThemeToggle />
                 </div>
+                <Button
+                  variant="outline"
+                  className="w-full"
+                  asChild
+                >
+                  <a
+                    href="https://ai-call-analytics.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <LayoutDashboard className="h-4 w-4" />
+                    Dashboard
+                  </a>
+                </Button>
                 {/* Commented out for launch - will enable when auth is ready */}
                 {/* <Button variant="ghost" className="w-full">
                   Sign In
