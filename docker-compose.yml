@@ -1,0 +1,7 @@
+services:
+  hireagent-frontend:
+    build: ./
+    container_name: hireagent_frontend
+    ports:
+      - "9010:80"
+    restart: always
