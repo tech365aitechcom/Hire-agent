@@ -54,7 +54,7 @@ export function Navbar() {
               asChild
             >
               <a
-                href="https://ai-call-analytics.vercel.app/"
+                href="https://panel.hireagent.co"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
