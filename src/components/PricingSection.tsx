@@ -4,36 +4,38 @@ import { Button } from '@/components/ui/button';
 
 const plans = [
   {
-    name: 'Starter',
-    price: '$49',
-    period: '/month',
-    description: 'Perfect for small businesses getting started',
+    name: 'India',
+    price: '₹6',
+    period: '/minute',
+    description: 'Pay-as-you-go pricing for India',
     features: [
-      '500 minutes/month',
-      '1 AI Voice Agent',
-      'Basic voice templates',
-      'Email support',
-      'API access',
-    ],
-    cta: 'Start Free Trial',
-    popular: false,
-  },
-  {
-    name: 'Growth',
-    price: '$199',
-    period: '/month',
-    description: 'For growing teams with higher volume',
-    features: [
-      '3,000 minutes/month',
-      '5 AI Voice Agents',
+      'No monthly commitment',
+      'Unlimited AI Voice Agents',
       'Premium voices & accents',
-      'Priority support',
       'CRM integrations',
-      'Custom workflows',
       'Analytics dashboard',
+      'Multi-language support',
+      'Priority support',
     ],
     cta: 'Start Free Trial',
     popular: true,
+  },
+  {
+    name: 'International',
+    price: '$0.10',
+    period: '/minute',
+    description: 'Pay-as-you-go pricing for international',
+    features: [
+      'No monthly commitment',
+      'Unlimited AI Voice Agents',
+      'Premium voices & accents',
+      'CRM integrations',
+      'Analytics dashboard',
+      'Multi-language support',
+      'Priority support',
+    ],
+    cta: 'Start Free Trial',
+    popular: false,
   },
   {
     name: 'Enterprise',
@@ -41,14 +43,14 @@ const plans = [
     period: '',
     description: 'For large organizations with custom needs',
     features: [
-      'Unlimited minutes',
-      'Unlimited AI Agents',
+      'Volume discounts',
       'Custom voice cloning',
-      'Dedicated support',
+      'Dedicated support manager',
       'White-label option',
       'SLA guarantee',
       'On-premise deployment',
       'Custom integrations',
+      'Advanced security',
     ],
     cta: 'Contact Sales',
     popular: false,
@@ -76,7 +78,7 @@ export function PricingSection() {
             <span className="gradient-text">Pricing</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Start free, scale as you grow. No hidden fees, no surprises.
+            Pay only for what you use. No monthly commitments, no hidden fees.
           </p>
         </motion.div>
 

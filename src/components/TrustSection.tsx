@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const logos = [
-  'TechCorp', 'HealthPlus', 'RealtyPro', 'SalesForce', 'AutomateHQ', 'CloudWorks'
+  'Grest', 'Codoholics', 'Magna Industry', 'Westoryboard', 'Earsolutions'
 ];
 
 export function TrustSection() {

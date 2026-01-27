@@ -100,28 +100,15 @@ export function ContactSection() {
                   <div>
                     <p className="font-medium">Email</p>
                     <a
-                      href="mailto:tech@365aitech.com"
+                      href="mailto:info@hireagent.co"
                       className="text-muted-foreground hover:text-neon-purple transition-colors"
                     >
-                      tech@365aitech.com
+                      info@hireagent.co
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 group">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-neon-purple/20 to-neon-blue/20 border border-neon-purple/20 group-hover:border-neon-purple/40 transition-colors">
-                    <Phone className="h-6 w-6 text-neon-blue" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Phone</p>
-                    <a
-                      href="tel:+919650367990"
-                      className="text-muted-foreground hover:text-neon-blue transition-colors"
-                    >
-                      +91 9650367990
-                    </a>
-                  </div>
-                </div>
+                
 
                 {/* <div className="flex items-start gap-4 group">
                   <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-neon-purple/20 to-neon-blue/20 border border-neon-purple/20 group-hover:border-neon-purple/40 transition-colors">

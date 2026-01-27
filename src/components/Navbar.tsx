@@ -8,6 +8,7 @@ const navLinks = [
   { name: 'Sales Voicebots', href: '/sales' },
   { name: 'Customer Support', href: '/support' },
   { name: 'AI Workflows', href: '/automation' },
+  { name: 'Integrations', href: '/integrations' },
   { name: 'Pricing', href: '/#pricing' },
 ];
 

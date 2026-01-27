@@ -5,6 +5,7 @@ const footerLinks = {
     { name: 'Sales Voicebots', href: '/sales' },
     { name: 'Customer Support', href: '/support' },
     { name: 'AI Workflows', href: '/automation' },
+    { name: 'Integrations', href: '/integrations' },
     { name: 'Pricing', href: '/#pricing' },
   ],
   Industries: [
@@ -39,19 +40,13 @@ export function Footer() {
             </p>
             <div className="mt-6 space-y-3">
               <a
-                href="mailto:tech@365aitech.com"
+                href="mailto:info@hireagent.co"
                 className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground group"
               >
                 <Mail className="h-4 w-4 text-neon-purple group-hover:text-neon-purple/80" />
-                tech@365aitech.com
+                info@hireagent.co
               </a>
-              <a
-                href="tel:+919650367990"
-                className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground group"
-              >
-                <Phone className="h-4 w-4 text-neon-blue group-hover:text-neon-blue/80" />
-                +91 9650367990
-              </a>
+             
             </div>
             {/* Commented out for launch - will enable when social profiles are ready */}
             {/* <div className="mt-6 flex gap-4">

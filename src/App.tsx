@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import SalesVoicebots from "./pages/SalesVoicebots";
 import CustomerSupport from "./pages/CustomerSupport";
 import AIWorkflows from "./pages/AIWorkflows";
+import Integrations from "./pages/Integrations";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
               <Route path="/sales" element={<SalesVoicebots />} />
               <Route path="/support" element={<CustomerSupport />} />
               <Route path="/automation" element={<AIWorkflows />} />
+              <Route path="/integrations" element={<Integrations />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
