@@ -55,7 +55,7 @@ export function Navbar() {
               asChild
             >
               <a
-                href="https://panel.hireagent.co"
+                href="https://voice.hireagent.co/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -97,7 +97,20 @@ export function Navbar() {
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    if (link.href.includes('#')) {
+                      e.preventDefault();
+                      setIsOpen(false);
+                      setTimeout(() => {
+                        const id = link.href.split('#')[1];
+                        const el = document.getElementById(id);
+                        if (el) el.scrollIntoView({ behavior: 'smooth' });
+                        else window.location.href = link.href;
+                      }, 300);
+                    } else {
+                      setIsOpen(false);
+                    }
+                  }}
                   className="block text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {link.name}
@@ -114,7 +127,7 @@ export function Navbar() {
                   asChild
                 >
                   <a
-                    href="https://ai-call-analytics.vercel.app/"
+                    href="https://voice.hireagent.co"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2"
