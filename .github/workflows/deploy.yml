@@ -13,6 +13,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    # Copy the pre-existing .env file from the backup location to the project directory
+    - name: Copy .env file from backup
+      run: |
+        cp /var/www/env-backups/.env.hire-agent /var/www/hire-agent-new-runner/_work/Hire-agent/Hire-agent/.env
+        echo ".env file copied from backup."
+
     - name: Run deploy command
       run: docker-compose -f docker-compose.yml up -d --build
 
