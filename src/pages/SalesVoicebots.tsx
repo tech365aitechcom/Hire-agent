@@ -65,13 +65,13 @@ const SalesVoicebots = () => {
   return (
     <>
       <Helmet>
-        <title>Sales Voicebots - AI Sales Automation | HireAgent</title>
+        <title>Sales Voicebots | AI Sales Automation</title>
         <meta
           name="description"
-          content="Automate your sales process with AI voicebots. Lead qualification, appointment booking, and outbound calling 24/7. Increase conversions and scale your sales team."
+          content="Deploy AI voice agents for calls, bookings, support, and lead qualification. Build human-like voice assistants without complex code."
         />
         <meta name="keywords" content="sales voicebot, AI sales automation, lead qualification, appointment booking, outbound calling AI" />
-        <link rel="canonical" href="https://hireagent.com/sales" />
+        <link rel="canonical" href="https://hireagent.co/sales" />
       </Helmet>
 
       <main className="min-h-screen bg-background overflow-x-hidden">

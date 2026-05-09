@@ -91,13 +91,13 @@ const Integrations = () => {
   return (
     <>
       <Helmet>
-        <title>Integrations - Connect HireAgent with Your Tech Stack | HireAgent</title>
+        <title>AI virtual Assistant for Business | AI Chatbot for Small Business India | Automate Customer Support using AI</title>
         <meta
           name="description"
-          content="Connect HireAgent with 200+ apps and tools. Integrate with CRMs, calendars, telephony systems, and more. Automate your workflow seamlessly."
+          content="AI voice bot for customer support and best AI chatbot for business. Integrate Hire Agent with apps, sync CRM, and automate workflows easily."
         />
         <meta name="keywords" content="integrations, API, CRM integration, calendar integration, telephony integration, automation tools" />
-        <link rel="canonical" href="https://hireagent.com/integrations" />
+        <link rel="canonical" href="https://hireagent.co/integrations" />
       </Helmet>
 
       <main className="min-h-screen bg-background overflow-x-hidden">

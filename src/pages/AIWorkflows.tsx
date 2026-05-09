@@ -94,13 +94,13 @@ const AIWorkflows = () => {
   return (
     <>
       <Helmet>
-        <title>AI Workflows & Automation - No-Code Automation Platform | HireAgent</title>
+        <title>Best AI Automation Tools for Startups | AI Automation Service Company | AI Automation Tools for Business</title>
         <meta
           name="description"
-          content="Build powerful AI workflows without code. Automate business processes across sales, support, and operations. Connect apps, automate tasks, and scale efficiently."
+          content="Automate customer support using AI with a leading AI automation service company. Build no-code workflows, connect apps, and scale efficiently."
         />
         <meta name="keywords" content="AI automation, workflow automation, no-code automation, business process automation, AI workflows" />
-        <link rel="canonical" href="https://hireagent.com/automation" />
+        <link rel="canonical" href="https://hireagent.co/automation" />
       </Helmet>
 
       <main className="min-h-screen bg-background overflow-x-hidden">

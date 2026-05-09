@@ -72,13 +72,13 @@ const CustomerSupport = () => {
   return (
     <>
       <Helmet>
-        <title>AI Voicebots & Chatbots for Customer Support | HireAgent</title>
+        <title>AI Voicebots & Chatbots | AI Voicebots & Chatbots for Customer Support</title>
         <meta
           name="description"
-          content="Transform customer support with AI voicebots and chatbots. 24/7 phone and chat automation, instant responses, and 80% cost reduction. Omnichannel support solution."
+          content="AI virtual assistant for business with the best AI automation tools for startups. Streamline tasks, boost productivity, and scale operations efficiently."
         />
         <meta name="keywords" content="customer support AI, voicebot support, chatbot automation, automated customer service, AI helpdesk, 24/7 support, omnichannel support" />
-        <link rel="canonical" href="https://hireagent.com/support" />
+        <link rel="canonical" href="https://hireagent.co/support" />
       </Helmet>
 
       <main className="min-h-screen bg-background overflow-x-hidden">
