@@ -10,6 +10,7 @@ const navLinks = [
   { name: 'AI Workflows', href: '/automation' },
   { name: 'Integrations', href: '/integrations' },
   { name: 'Pricing', href: '/#pricing' },
+  { name: 'Blog', href: '/blog' },
 ];
 
 export function Navbar() {

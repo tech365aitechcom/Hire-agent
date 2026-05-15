@@ -10,6 +10,9 @@ import SalesVoicebots from "./pages/SalesVoicebots";
 import CustomerSupport from "./pages/CustomerSupport";
 import AIWorkflows from "./pages/AIWorkflows";
 import Integrations from "./pages/Integrations";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import AdminBlog from "./pages/AdminBlog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +31,9 @@ const App = () => (
               <Route path="/support" element={<CustomerSupport />} />
               <Route path="/automation" element={<AIWorkflows />} />
               <Route path="/integrations" element={<Integrations />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
+              <Route path="/admin" element={<AdminBlog />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

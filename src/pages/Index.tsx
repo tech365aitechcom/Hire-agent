@@ -11,6 +11,7 @@ import { UseCasesSection } from '@/components/UseCasesSection';
 import { IntegrationsSection } from '@/components/IntegrationsSection';
 import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { PricingSection } from '@/components/PricingSection';
+import { BlogSection } from '@/components/BlogSection';
 import { CTASection } from '@/components/CTASection';
 import { ContactSection } from '@/components/ContactSection';
 import { Footer } from '@/components/Footer';
@@ -51,6 +52,7 @@ const Index = () => {
         <IntegrationsSection />
         <WhyChooseUs />
         <PricingSection />
+        <BlogSection />
         <CTASection />
         <ContactSection />
         <Footer />
