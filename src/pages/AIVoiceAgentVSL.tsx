@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { motion, Variants } from 'framer-motion';
-import { Play, CheckCircle, Mic, Zap, PhoneCall, Clock, IndianRupee, ArrowRight, Volume2 } from 'lucide-react';
+import { CheckCircle, Mic, Zap, PhoneCall, Clock, IndianRupee, ArrowRight, Volume2 } from 'lucide-react';
 
 const DEMO_URL = "https://superprofile.bio/vp/ai-voice-agents";
 
@@ -219,15 +219,14 @@ export default function AIVoiceAgentVSL() {
               variants={fadeUp} initial="hidden" animate="visible" custom={4}
               className="mx-auto mb-10 max-w-2xl rounded-2xl border border-white/10 bg-gray-900 p-1 shadow-2xl"
             >
-              <video
-                className="w-full rounded-xl aspect-video bg-black"
-                controls
-                playsInline
-                preload="metadata"
-              >
-                <source src="/video.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black">
+                <iframe
+                  src="https://drive.google.com/file/d/1DEnpnITw-YvrW5dSxXrMACFBSsG_fC7A/preview"
+                  className="absolute inset-0 w-full h-full rounded-xl"
+                  allow="autoplay"
+                  allowFullScreen
+                />
+              </div>
             </motion.div>
 
             <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={5}>
