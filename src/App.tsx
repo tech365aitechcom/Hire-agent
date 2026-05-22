@@ -13,6 +13,7 @@ import Integrations from "./pages/Integrations";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import AdminBlog from "./pages/AdminBlog";
+import AIVoiceAgentVSL from "./pages/AIVoiceAgentVSL";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/admin" element={<AdminBlog />} />
+              <Route path="/ai-voice-agent-vsl" element={<AIVoiceAgentVSL />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

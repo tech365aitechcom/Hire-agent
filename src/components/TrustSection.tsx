@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 
-const logos = [
-  'Grest', 'Codoholics', 'Magna Industry', 'Westoryboard', 'Earsolutions'
+const brands = [
+  { name: 'Rayaan Trading & Services', logo: '/brands/rayaan.png' },
+  { name: 'annovatixGLOBAL',           logo: '/brands/annovatix.png' },
 ];
 
 export function TrustSection() {
@@ -12,28 +13,33 @@ export function TrustSection() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mb-8 text-center text-sm text-muted-foreground"
+          className="mb-10 text-center text-sm text-muted-foreground"
         >
           Trusted by startups, clinics & automation teams worldwide
         </motion.p>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="flex flex-wrap items-center justify-center gap-8 lg:gap-16"
+          className="flex flex-wrap items-center justify-center gap-10 lg:gap-20"
         >
-          {logos.map((logo, index) => (
+          {brands.map((brand, index) => (
             <motion.div
-              key={logo}
+              key={brand.name}
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 * index }}
-              className="text-xl font-display font-semibold text-muted-foreground/50 transition-colors hover:text-muted-foreground"
+              className="opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
             >
-              {logo}
+              <img
+                src={brand.logo}
+                alt={brand.name}
+                className="h-12 w-auto max-w-[160px] object-contain"
+                loading="lazy"
+              />
             </motion.div>
           ))}
         </motion.div>
