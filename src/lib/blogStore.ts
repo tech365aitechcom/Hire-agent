@@ -573,34 +573,25 @@ const samplePosts: BlogPost[] = [
   },
 ];
 
-function initStore(): void {
-  const raw = localStorage.getItem(STORAGE_KEY);
-  if (!raw) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(samplePosts));
-    return;
-  }
+export function getAllPosts(): BlogPost[] {
   try {
-    const stored: BlogPost[] = JSON.parse(raw);
+    const raw = localStorage.getItem(STORAGE_KEY);
+    const stored: BlogPost[] = raw ? JSON.parse(raw) : [];
     const storedIds = new Set(stored.map((p) => p.id));
     const missing = samplePosts.filter((p) => !storedIds.has(p.id));
+    const all = [...stored, ...missing];
     if (missing.length > 0) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify([...stored, ...missing]));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(all));
+    } else if (!raw) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(samplePosts));
     }
-  } catch {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(samplePosts));
-  }
-}
-
-export function getAllPosts(): BlogPost[] {
-  initStore();
-  try {
-    const data = localStorage.getItem(STORAGE_KEY);
-    const posts: BlogPost[] = data ? JSON.parse(data) : [];
-    return posts.sort(
+    return all.sort(
       (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
     );
   } catch {
-    return [...samplePosts];
+    return [...samplePosts].sort(
+      (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+    );
   }
 }
 

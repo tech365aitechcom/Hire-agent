@@ -38,9 +38,107 @@
 
   <url>
     <loc>https://hireagent.co/blog</loc>
-    <lastmod>2026-05-15</lastmod>
+    <lastmod>2026-05-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://hireagent.co/blog/how-ai-voice-bots-transform-customer-support-2026</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hireagent.co/blog/5-ways-automate-sales-pipeline-ai-voice-agents</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hireagent.co/blog/ai-chatbots-vs-voice-bots-which-is-right-for-your-business</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hireagent.co/blog/ai-chatbot-for-business-complete-guide-2026</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hireagent.co/blog/ai-customer-support-chatbot-reduce-tickets-boost-csat</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hireagent.co/blog/conversational-ai-platform-what-it-is-and-why-your-business-needs-one</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hireagent.co/blog/ai-chat-automation-save-thousands-of-hours-every-month</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hireagent.co/blog/best-ai-chatbot-for-business-2026-top-platforms-compared</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hireagent.co/blog/ai-chatbot-pricing-what-you-should-expect-to-pay-in-2026</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hireagent.co/blog/hire-ai-chatbot-service-what-to-look-for-before-you-sign</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hireagent.co/blog/ai-customer-service-solution-transform-your-support-operation</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hireagent.co/blog/enterprise-ai-chatbot-solution-what-large-organisations-need</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hireagent.co/blog/ai-chatbot-for-lead-generation-capture-qualify-convert-at-scale</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://hireagent.co/blog/ai-hiring-assistant-tool-recruit-smarter-faster-in-2026</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
