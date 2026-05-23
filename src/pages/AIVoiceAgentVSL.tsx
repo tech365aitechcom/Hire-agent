@@ -13,7 +13,7 @@ const fadeUp: Variants = {
   }),
 };
 
-function CTAButton({ label = "👉 Book Your FREE Demo Now — Get 250 Minutes FREE", large = false }: { label?: string; large?: boolean }) {
+function CTAButton({ label = "👉 Book Your 1:1 Demo @ ₹99 — Refundable", large = false }: { label?: string; large?: boolean }) {
   return (
     <a
       href={DEMO_URL}
@@ -390,7 +390,7 @@ export default function AIVoiceAgentVSL() {
           className="py-14 flex flex-col items-center gap-3 px-4 text-center"
         >
           <p className="text-gray-400 text-sm uppercase tracking-widest mb-2">Get started today — completely free</p>
-          <CTAButton large label="👉 Claim Your 250 FREE Minutes Now" />
+          <CTAButton large />
           <p className="text-xs text-gray-600 mt-2">ZERO setup cost · Pay only what you use</p>
         </motion.div>
 
