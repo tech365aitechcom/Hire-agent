@@ -220,12 +220,15 @@ export default function AIVoiceAgentVSL() {
               className="mx-auto mb-10 max-w-2xl rounded-2xl border border-white/10 bg-gray-900 p-1 shadow-2xl"
             >
               <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black">
-                <iframe
-                  src="https://drive.google.com/file/d/1DEnpnITw-YvrW5dSxXrMACFBSsG_fC7A/preview"
+                <video
                   className="absolute inset-0 w-full h-full rounded-xl"
-                  allow="autoplay"
-                  allowFullScreen
-                />
+                  controls
+                  playsInline
+                  preload="metadata"
+                >
+                  <source src="/video/vsl.mp4" type="video/mp4" />
+                  Your browser does not support the video element.
+                </video>
               </div>
             </motion.div>
 
