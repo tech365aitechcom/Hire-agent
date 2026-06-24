@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 const brands = [
   { name: 'Rayaan Trading & Services', logo: '/brands/rayaan.png' },
   { name: 'annovatixGLOBAL',           logo: '/brands/annovatix.png' },
+  { name: 'Credo',                     logo: '/brands/credo-logo-B6zlxrYK.png' },
+  { name: 'EduConnect',                logo: '/brands/EduConnect-Logo.jpg' },
 ];
 
 export function TrustSection() {
