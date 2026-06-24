@@ -1,11 +1,12 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const brands = [
-  { name: 'Rayaan Trading & Services', logo: '/brands/rayaan.png' },
-  { name: 'annovatixGLOBAL',           logo: '/brands/annovatix.png' },
-  { name: 'Credo',                     logo: '/brands/credo-logo-B6zlxrYK.png' },
-  { name: 'EduConnect',                logo: '/brands/EduConnect-Logo.jpg' },
-  { name: 'NMIMS University',          logo: '/brands/nmims-university-logo.png' },
+  { name: "Rayaan Trading & Services", logo: "/brands/rayaan.png" },
+  { name: "annovatixGLOBAL", logo: "/brands/annovatix.png" },
+  { name: "Credo", logo: "/brands/credo-logo-B6zlxrYK.png" },
+  { name: "EduConnect", logo: "/brands/EduConnect-Logo.jpg" },
+  { name: "NMIMS University", logo: "/brands/nmims-university-logo.png" },
+  { name: "Grest", logo: "/brands/grest.webp" },
 ];
 export function TrustSection() {
   return (
@@ -39,7 +40,7 @@ export function TrustSection() {
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="h-12 w-auto max-w-[160px] object-contain"
+                className="h-16 w-auto max-w-[180px] object-contain"
                 loading="lazy"
               />
             </motion.div>
