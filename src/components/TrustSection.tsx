@@ -5,8 +5,8 @@ const brands = [
   { name: 'annovatixGLOBAL',           logo: '/brands/annovatix.png' },
   { name: 'Credo',                     logo: '/brands/credo-logo-B6zlxrYK.png' },
   { name: 'EduConnect',                logo: '/brands/EduConnect-Logo.jpg' },
+  { name: 'NMIMS University',          logo: '/brands/nmims-university-logo.png' },
 ];
-
 export function TrustSection() {
   return (
     <section className="border-y border-border/40 bg-card/30 py-12">
