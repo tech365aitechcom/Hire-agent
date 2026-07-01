@@ -7,6 +7,7 @@ import { FeaturesSection } from '@/components/FeaturesSection';
 import { CapabilitiesSection } from '@/components/CapabilitiesSection';
 import { AgentGallery } from '@/components/AgentGallery';
 import { HowItWorks } from '@/components/HowItWorks';
+import { CallRecordings } from '@/components/CallRecordings';
 import { UseCasesSection } from '@/components/UseCasesSection';
 import { IntegrationsSection } from '@/components/IntegrationsSection';
 import { WhyChooseUs } from '@/components/WhyChooseUs';
@@ -48,6 +49,7 @@ const Index = () => {
         <CapabilitiesSection />
         <AgentGallery />
         <HowItWorks />
+        <CallRecordings />
         <UseCasesSection />
         <IntegrationsSection />
         <WhyChooseUs />
