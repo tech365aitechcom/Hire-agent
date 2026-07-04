@@ -40,11 +40,11 @@ export function Footer() {
             </p>
             <div className="mt-6 space-y-3">
               <a
-                href="mailto:info@hireagent.co"
+                href="mailto:ssingh@365aitech.com"
                 className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground group"
               >
                 <Mail className="h-4 w-4 text-neon-purple group-hover:text-neon-purple/80" />
-                info@hireagent.co
+                ssingh@365aitech.com
               </a>
              
             </div>

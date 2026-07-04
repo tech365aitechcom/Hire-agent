@@ -35,9 +35,9 @@ export function ContactSection() {
     setIsSubmitting(true);
 
     try {
-      // Using Web3Forms to send email to nilesh@365aitech.com
+      // Using Web3Forms to send email to ssingh@365aitech.com
       const formData = new FormData();
-      formData.append('access_key', '25ade69d-8418-4630-ada6-5ef8933d727e');
+      formData.append('access_key', 'e92de83a-c201-479b-8fb7-5a635a7c178e');
       formData.append('name', data.name);
       formData.append('email', data.email);
       formData.append('phone', data.phone || 'Not provided');
@@ -100,10 +100,10 @@ export function ContactSection() {
                   <div>
                     <p className="font-medium">Email</p>
                     <a
-                      href="mailto:info@hireagent.co"
+                      href="mailto:ssingh@365aitech.com"
                       className="text-muted-foreground hover:text-neon-purple transition-colors"
                     >
-                      info@hireagent.co
+                      ssingh@365aitech.com
                     </a>
                   </div>
                 </div>
