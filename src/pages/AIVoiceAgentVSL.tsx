@@ -598,6 +598,17 @@ export default function AIVoiceAgentVSL() {
           </div>
         </section>
 
+
+        {/* ── CTA STRIP ── */}
+        <motion.div
+          variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
+          className="py-12 px-4 flex flex-col items-center gap-3 text-center border-t border-white/5 bg-gradient-to-b from-orange-500/5 to-transparent"
+        >
+          <p className="text-orange-400 text-xs font-semibold uppercase tracking-widest">Don't let another lead go unanswered</p>
+          <CTAButton large />
+          <p className="text-xs text-gray-600">50 free minutes · No credit card required</p>
+        </motion.div>
+
         {/* ── INDUSTRIES WE COVER ── */}
         <section className="py-20 px-4 border-t border-white/5 bg-gray-900/30">
           <div className="mx-auto max-w-6xl">
@@ -687,6 +698,17 @@ export default function AIVoiceAgentVSL() {
             </div>
           </div>
         </section>
+
+
+        {/* ── CTA STRIP ── */}
+        <motion.div
+          variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
+          className="py-12 px-4 flex flex-col items-center gap-3 text-center border-t border-white/5 bg-gradient-to-b from-orange-500/5 to-transparent"
+        >
+          <p className="text-orange-400 text-xs font-semibold uppercase tracking-widest">Ready to automate your calls?</p>
+          <CTAButton large />
+          <p className="text-xs text-gray-600">50 free minutes · No credit card required</p>
+        </motion.div>
 
         {/* ── HOW WE WORK ── */}
         <section className="py-20 px-4 border-t border-white/5">
