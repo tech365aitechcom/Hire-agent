@@ -12,7 +12,7 @@ const fadeUp: Variants = {
 };
 
 export default function ThankYou() {
-  const CALENDLY_URL = "https://calendly.com/365-aitech/30min";
+  const CALENDLY_URL = "https://calendly.com/panditbhartesh/ai-voice-bot-demo";
 
   return (
     <>
