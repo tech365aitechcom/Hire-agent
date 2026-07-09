@@ -91,7 +91,7 @@ const Integrations = () => {
   return (
     <>
       <Helmet>
-        <title>AI virtual Assistant for Business | AI Chatbot for Small Business India | Automate Customer Support using AI</title>
+        <title>AI voice Bot for Customer Support in Delhi | Best AI Chatbot for Business in Delhi</title>
         <meta
           name="description"
           content="AI voice bot for customer support and best AI chatbot for business. Integrate Hire Agent with apps, sync CRM, and automate workflows easily."

@@ -21,7 +21,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>HireAgent- AI voice Bot | AI voice Bot for Customer Support</title>
+        <title>Hire Agent- AI Chatbot for Business in Delhi | AI Customer Support Chatbot in in Delhi</title>
         <meta
           name="description"
           content="Hire Agent AI chatbot for business with human-like voice assistants that talk, listen, and convert. Deploy fast and scale customer support effortlessly."
@@ -30,13 +30,13 @@ const Index = () => {
         <link rel="canonical" href="https://hireagent.co" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="HireAgent- AI voice Bot | AI voice Bot for Customer Support" />
+        <meta property="og:title" content="Hire Agent- AI Chatbot for Business in Delhi | AI Customer Support Chatbot in in Delhi" />
         <meta property="og:description" content="Hire Agent AI chatbot for business with human-like voice assistants that talk, listen, and convert. Deploy fast and scale customer support effortlessly." />
         <meta property="og:type" content="website" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="HireAgent- AI voice Bot | AI voice Bot for Customer Support" />
+        <meta name="twitter:title" content="Hire Agent- AI Chatbot for Business in Delhi | AI Customer Support Chatbot in in Delhi" />
         <meta name="twitter:description" content="Hire Agent AI chatbot for business with human-like voice assistants that talk, listen, and convert. Deploy fast and scale customer support effortlessly." />
       </Helmet>
 
