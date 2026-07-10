@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 const plans = [
   {
     name: 'India',
-    price: '₹6',
+    price: '₹4.5',
     period: '/minute',
     description: 'Pay-as-you-go pricing for India',
     features: [
@@ -19,23 +19,6 @@ const plans = [
     ],
     cta: 'Start Free Trial',
     popular: true,
-  },
-  {
-    name: 'International',
-    price: '$0.10',
-    period: '/minute',
-    description: 'Pay-as-you-go pricing for international',
-    features: [
-      'No monthly commitment',
-      'Unlimited AI Voice Agents',
-      'Premium voices & accents',
-      'CRM integrations',
-      'Analytics dashboard',
-      'Multi-language support',
-      'Priority support',
-    ],
-    cta: 'Start Free Trial',
-    popular: false,
   },
   {
     name: 'Enterprise',
@@ -82,7 +65,7 @@ export function PricingSection() {
           </p>
         </motion.div>
 
-        <div className="grid gap-8 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
           {plans.map((plan, index) => (
             <motion.div
               key={plan.name}
@@ -90,45 +73,49 @@ export function PricingSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`relative overflow-hidden rounded-2xl border p-8 ${
+              className={`relative overflow-hidden rounded-2xl border p-8 flex flex-col justify-between ${
                 plan.popular
                   ? 'border-neon-purple bg-gradient-to-b from-neon-purple/10 to-card/50'
                   : 'border-border/50 bg-card/50'
               }`}
             >
-              {plan.popular && (
-                <div className="absolute right-4 top-4 rounded-full bg-gradient-to-r from-neon-purple to-neon-blue px-3 py-1 text-xs font-semibold text-white">
-                  Most Popular
+              <div>
+                {plan.popular && (
+                  <div className="absolute right-4 top-4 rounded-full bg-gradient-to-r from-neon-purple to-neon-blue px-3 py-1 text-xs font-semibold text-white">
+                    Most Popular
+                  </div>
+                )}
+
+                <h3 className="font-display text-xl font-semibold">{plan.name}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{plan.description}</p>
+
+                <div className="mt-6 flex items-baseline gap-1">
+                  <span className="font-display text-4xl font-bold">{plan.price}</span>
+                  <span className="text-muted-foreground">{plan.period}</span>
                 </div>
-              )}
 
-              <h3 className="font-display text-xl font-semibold">{plan.name}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{plan.description}</p>
-
-              <div className="mt-6 flex items-baseline gap-1">
-                <span className="font-display text-4xl font-bold">{plan.price}</span>
-                <span className="text-muted-foreground">{plan.period}</span>
+                <ul className="mt-8 space-y-4">
+                  {plan.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-3">
+                      <div className="flex h-5 w-5 items-center justify-center rounded-full bg-neon-cyan/20">
+                        <Check className="h-3 w-3 text-neon-cyan" />
+                      </div>
+                      <span className="text-sm">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
-              <ul className="mt-8 space-y-4">
-                {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-center gap-3">
-                    <div className="flex h-5 w-5 items-center justify-center rounded-full bg-neon-cyan/20">
-                      <Check className="h-3 w-3 text-neon-cyan" />
-                    </div>
-                    <span className="text-sm">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-
-              {/* Commented out for launch - will enable when signup/contact is ready */}
-              {/* <Button
+              <Button
                 variant={plan.popular ? 'hero' : 'heroOutline'}
                 className="mt-8 w-full"
                 size="lg"
+                asChild
               >
-                {plan.cta}
-              </Button> */}
+                <a href="#contact">
+                  {plan.cta}
+                </a>
+              </Button>
             </motion.div>
           ))}
         </div>
