@@ -9,13 +9,13 @@ const footerLinks = {
     { name: 'Pricing', href: '/#pricing' },
   ],
   Industries: [
-    { name: 'Healthcare', href: '/#industries' },
-    { name: 'Real Estate', href: '/#industries' },
-    { name: 'Fintech', href: '/#industries' },
-    { name: 'Fitness', href: '/#industries' },
+    { name: 'Healthcare', href: '/#usecases' },
+    { name: 'Real Estate', href: '/#usecases' },
+    { name: 'Fintech', href: '/#usecases' },
+    { name: 'Fitness', href: '/#usecases' },
   ],
   Company: [
-    { name: 'About Us', href: '/#about' },
+    { name: 'About Us', href: '/#contact' },
     { name: 'Contact Us', href: '/#contact' },
   ],
 };

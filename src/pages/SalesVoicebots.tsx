@@ -185,9 +185,11 @@ const SalesVoicebots = () => {
             <p className="text-xl text-muted-foreground mb-8">
               Join hundreds of companies using HireAgent to automate their sales process.
             </p>
-            <Button size="lg" className="bg-gradient-to-r from-neon-purple to-neon-blue hover:opacity-90">
-              Get Started Free
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button size="lg" className="bg-gradient-to-r from-neon-purple to-neon-blue hover:opacity-90" asChild>
+              <a href="/#contact">
+                Get Started Free
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
           </div>
         </section>

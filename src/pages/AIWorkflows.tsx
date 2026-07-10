@@ -285,9 +285,11 @@ const AIWorkflows = () => {
             <p className="text-xl text-muted-foreground mb-8">
               Start building AI workflows today. No credit card required.
             </p>
-            <Button size="lg" className="bg-gradient-to-r from-neon-purple to-neon-blue hover:opacity-90">
-              Start Free Trial
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button size="lg" className="bg-gradient-to-r from-neon-purple to-neon-blue hover:opacity-90" asChild>
+              <a href="/#contact">
+                Start Free Trial
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
           </div>
         </section>
