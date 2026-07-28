@@ -30,7 +30,7 @@ const recordings: Recording[] = [
   },
   {
     id: 'healthcare',
-    name: 'Cardiologist Appointment Bot',
+    name: 'Insurance Bot',
     category: 'Insurance',
     language: 'Hindi',
     description: 'AI voice bot handling policy renewal reminders, premium payment follow-ups, and claim status updates for insurance customers.',
