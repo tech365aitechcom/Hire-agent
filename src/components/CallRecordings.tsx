@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Play, Pause, TrendingUp, Stethoscope, Phone, Globe, BarChart3, GraduationCap, Landmark, Calendar } from 'lucide-react';
+import { Play, Pause, TrendingUp, Stethoscope, Phone, Globe, BarChart3, GraduationCap, Landmark, Shield, RefreshCw } from 'lucide-react';
 
 interface Recording {
   id: string;
@@ -22,8 +22,8 @@ const recordings: Recording[] = [
     category: 'Loan Sales',
     language: 'Hindi',
     description: 'AI agent pre-qualifying loan applicants over the phone, collecting KYC details, and scheduling callbacks.',
-    duration: '2:05',
-    src: '/audio/loan.mp3',
+    duration: '6:59',
+    src: '/audio/hdfc%20loan.mp3',
     stats: '60% faster qualification',
     icon: Landmark,
     color: 'from-blue-500 to-indigo-600',
@@ -31,23 +31,23 @@ const recordings: Recording[] = [
   {
     id: 'healthcare',
     name: 'Cardiologist Appointment Bot',
-    category: 'Healthcare',
+    category: 'Insurance',
     language: 'Hindi',
-    description: 'AI voice bot handling patient intake, appointment booking, and prescription refill inquiries for a multi-specialty clinic.',
-    duration: '1:24',
-    src: '/audio/cardio.mp3',
-    stats: '40% fewer no-shows',
-    icon: Stethoscope,
+    description: 'AI voice bot handling policy renewal reminders, premium payment follow-ups, and claim status updates for insurance customers.',
+    duration: '2:59',
+    src: '/audio/insurance.mp3',
+    stats: '55% renewal uplift',
+    icon: Shield,
     color: 'from-rose-500 to-pink-600',
   },
   {
     id: 'support',
-    name: 'EMR Support Bot',
+    name: 'Support Bot',
     category: 'Inbound Support',
     language: 'English',
-    description: 'AI voice assistant handling Tier-1 support calls — order status, EMR queries, returns, and troubleshooting without human intervention.',
-    duration: '1:55',
-    src: '/audio/emr.mp3',
+    description: 'AI voice assistant handling Tier-1 support calls — order status, account queries, returns, and troubleshooting without human intervention.',
+    duration: '1:04',
+    src: '/audio/customer%20support.mp3',
     stats: '85% queries resolved',
     icon: Phone,
     color: 'from-violet-500 to-purple-600',
@@ -58,8 +58,8 @@ const recordings: Recording[] = [
     category: 'EdTech',
     language: 'English',
     description: 'AI voice bot handling MBA program inquiries, application assistance, and follow-ups for a top B-school.',
-    duration: '1:32',
-    src: '/audio/educonnect.mp3',
+    duration: '1:54',
+    src: '/audio/educonnectt.mp3',
     stats: '3x more applications',
     icon: GraduationCap,
     color: 'from-emerald-500 to-teal-600',
@@ -67,13 +67,13 @@ const recordings: Recording[] = [
   {
     id: 'demosched',
     name: 'Demo Scheduling Bot',
-    category: 'Demo Scheduling',
+    category: 'Loan Recovery',
     language: 'Hinglish',
-    description: 'AI voice bot handling product demo scheduling, prospect qualification, and calendar coordination for sales teams.',
-    duration: '1:45',
-    src: '/audio/clinicflow.mp3',
-    stats: '50% more demos booked',
-    icon: Calendar,
+    description: 'AI voice bot following up on overdue EMIs, negotiating payment plans, and reminding borrowers of due dates.',
+    duration: '2:51',
+    src: '/audio/loan%20recoery.mp3',
+    stats: '35% faster recoveries',
+    icon: RefreshCw,
     color: 'from-amber-500 to-orange-600',
   },
 ];
