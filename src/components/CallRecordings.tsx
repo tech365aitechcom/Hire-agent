@@ -66,7 +66,7 @@ const recordings: Recording[] = [
   },
   {
     id: 'demosched',
-    name: 'Demo Scheduling Bot',
+    name: 'Loan Recovery Bot',
     category: 'Loan Recovery',
     language: 'Hinglish',
     description: 'AI voice bot following up on overdue EMIs, negotiating payment plans, and reminding borrowers of due dates.',
